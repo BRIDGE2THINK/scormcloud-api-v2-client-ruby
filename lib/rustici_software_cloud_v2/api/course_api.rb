@@ -20,10 +20,10 @@ module RusticiSoftwareCloudV2
       @api_client = api_client
     end
     # Returns the launch link to use to preview this course
-    # @param course_id 
-    # @param launch_link_request 
+    # @param course_id
+    # @param launch_link_request
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :css_url 
+    # @option opts [String] :css_url
     # @return [LaunchLinkSchema]
     def build_course_preview_launch_link(course_id, launch_link_request, opts = {})
       data, _status_code, _headers = build_course_preview_launch_link_with_http_info(course_id, launch_link_request, opts)
@@ -31,10 +31,10 @@ module RusticiSoftwareCloudV2
     end
 
     # Returns the launch link to use to preview this course
-    # @param course_id 
-    # @param launch_link_request 
+    # @param course_id
+    # @param launch_link_request
     # @param [Hash] opts the optional parameters
-    # @option opts [String] :css_url 
+    # @option opts [String] :css_url
     # @return [Array<(LaunchLinkSchema, Fixnum, Hash)>] LaunchLinkSchema data, response status code and response headers
     def build_course_preview_launch_link_with_http_info(course_id, launch_link_request, opts = {})
       if @api_client.config.debugging
@@ -67,7 +67,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(launch_link_request)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -81,9 +81,9 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Returns the link to use to preview this course
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
-    # @param launch_link_request 
+    # @param launch_link_request
     # @param [Hash] opts the optional parameters
     # @return [LaunchLinkSchema]
     def build_course_preview_launch_link_with_version(course_id, version_id, launch_link_request, opts = {})
@@ -92,9 +92,9 @@ module RusticiSoftwareCloudV2
     end
 
     # Returns the link to use to preview this course
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
-    # @param launch_link_request 
+    # @param launch_link_request
     # @param [Hash] opts the optional parameters
     # @return [Array<(LaunchLinkSchema, Fixnum, Hash)>] LaunchLinkSchema data, response status code and response headers
     def build_course_preview_launch_link_with_version_with_http_info(course_id, version_id, launch_link_request, opts = {})
@@ -131,7 +131,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(launch_link_request)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -147,7 +147,7 @@ module RusticiSoftwareCloudV2
     # Start a job to fetch and import a course.
     # An import job will be started to fetch and import the referenced file, and the import job ID will be returned. If the import is successful, the imported course will be registered using the courseId provided.\"
     # @param course_id A unique identifier your application will use to identify the course after import. Your application is responsible both for generating this unique ID and for keeping track of the ID for later use.
-    # @param import_request 
+    # @param import_request
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :may_create_new_version Is it OK to create a new version of this course? If this is set to false and the course already exists, the upload will fail. If true and the course already exists then a new version will be created. No effect if the course doesn&#39;t already exist. (default to false)
     # @option opts [String] :postback_url An optional parameter that specifies a URL to send a postback to when the course has finished uploading.
@@ -160,7 +160,7 @@ module RusticiSoftwareCloudV2
     # Start a job to fetch and import a course.
     # An import job will be started to fetch and import the referenced file, and the import job ID will be returned. If the import is successful, the imported course will be registered using the courseId provided.\&quot;
     # @param course_id A unique identifier your application will use to identify the course after import. Your application is responsible both for generating this unique ID and for keeping track of the ID for later use.
-    # @param import_request 
+    # @param import_request
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :may_create_new_version Is it OK to create a new version of this course? If this is set to false and the course already exists, the upload will fail. If true and the course already exists then a new version will be created. No effect if the course doesn&#39;t already exist.
     # @option opts [String] :postback_url An optional parameter that specifies a URL to send a postback to when the course has finished uploading.
@@ -198,7 +198,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(import_request)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -262,7 +262,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -276,7 +276,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Delete `courseId`
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def delete_course(course_id, opts = {})
@@ -285,7 +285,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Delete &#x60;courseId&#x60;
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def delete_course_with_http_info(course_id, opts = {})
@@ -314,7 +314,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -327,8 +327,8 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Clears the `settingId` value for this course
-    # @param course_id 
-    # @param setting_id 
+    # @param course_id
+    # @param setting_id
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def delete_course_configuration_setting(course_id, setting_id, opts = {})
@@ -337,8 +337,8 @@ module RusticiSoftwareCloudV2
     end
 
     # Clears the &#x60;settingId&#x60; value for this course
-    # @param course_id 
-    # @param setting_id 
+    # @param course_id
+    # @param setting_id
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def delete_course_configuration_setting_with_http_info(course_id, setting_id, opts = {})
@@ -371,7 +371,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -384,8 +384,8 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Delete tags for this course
-    # @param course_id 
-    # @param tags 
+    # @param course_id
+    # @param tags
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def delete_course_tags(course_id, tags, opts = {})
@@ -394,8 +394,8 @@ module RusticiSoftwareCloudV2
     end
 
     # Delete tags for this course
-    # @param course_id 
-    # @param tags 
+    # @param course_id
+    # @param tags
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def delete_course_tags_with_http_info(course_id, tags, opts = {})
@@ -428,7 +428,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(tags)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -441,7 +441,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Delete version `versionId` of `courseId`
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
     # @return [nil]
@@ -451,7 +451,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Delete version &#x60;versionId&#x60; of &#x60;courseId&#x60;
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
@@ -485,7 +485,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -498,9 +498,9 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Clears the `settingId` value for this course and version.
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
-    # @param setting_id 
+    # @param setting_id
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def delete_course_version_configuration_setting(course_id, version_id, setting_id, opts = {})
@@ -509,9 +509,9 @@ module RusticiSoftwareCloudV2
     end
 
     # Clears the &#x60;settingId&#x60; value for this course and version.
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
-    # @param setting_id 
+    # @param setting_id
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def delete_course_version_configuration_setting_with_http_info(course_id, version_id, setting_id, opts = {})
@@ -548,7 +548,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -561,7 +561,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Get information about `courseId`
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :include_registration_count Include the registration count in the results (default to false)
     # @option opts [BOOLEAN] :include_course_metadata Include course metadata in the results. If the course has no metadata, adding this parameter has no effect. (default to false)
@@ -572,7 +572,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Get information about &#x60;courseId&#x60;
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :include_registration_count Include the registration count in the results
     # @option opts [BOOLEAN] :include_course_metadata Include course metadata in the results. If the course has no metadata, adding this parameter has no effect.
@@ -605,7 +605,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -619,7 +619,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Returns all configuration settings for this course
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :include_metadata  (default to false)
     # @return [SettingListSchema]
@@ -629,9 +629,9 @@ module RusticiSoftwareCloudV2
     end
 
     # Returns all configuration settings for this course
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
-    # @option opts [BOOLEAN] :include_metadata 
+    # @option opts [BOOLEAN] :include_metadata
     # @return [Array<(SettingListSchema, Fixnum, Hash)>] SettingListSchema data, response status code and response headers
     def get_course_configuration_with_http_info(course_id, opts = {})
       if @api_client.config.debugging
@@ -660,7 +660,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -674,7 +674,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Get xAPI statements for `courseId`
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @option opts [String] :learner_id Only entries for the specified learner id will be included.
     # @option opts [DateTime] :since Only items updated since the specified ISO 8601 TimeStamp (inclusive) are included. If a time zone is not specified, UTC time zone will be used.
@@ -687,7 +687,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Get xAPI statements for &#x60;courseId&#x60;
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @option opts [String] :learner_id Only entries for the specified learner id will be included.
     # @option opts [DateTime] :since Only items updated since the specified ISO 8601 TimeStamp (inclusive) are included. If a time zone is not specified, UTC time zone will be used.
@@ -724,7 +724,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -738,7 +738,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Get the tags for this course
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @return [TagListSchema]
     def get_course_tags(course_id, opts = {})
@@ -747,7 +747,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Get the tags for this course
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @return [Array<(TagListSchema, Fixnum, Hash)>] TagListSchema data, response status code and response headers
     def get_course_tags_with_http_info(course_id, opts = {})
@@ -776,7 +776,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -790,7 +790,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Returns all configuration settings for this course and version.
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :include_metadata  (default to false)
@@ -801,10 +801,10 @@ module RusticiSoftwareCloudV2
     end
 
     # Returns all configuration settings for this course and version.
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
-    # @option opts [BOOLEAN] :include_metadata 
+    # @option opts [BOOLEAN] :include_metadata
     # @return [Array<(SettingListSchema, Fixnum, Hash)>] SettingListSchema data, response status code and response headers
     def get_course_version_configuration_with_http_info(course_id, version_id, opts = {})
       if @api_client.config.debugging
@@ -837,7 +837,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -851,7 +851,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Get version `versionId` of `courseId`
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :include_registration_count Include the registration count in the results (default to false)
@@ -863,7 +863,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Get version &#x60;versionId&#x60; of &#x60;courseId&#x60;
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
     # @option opts [BOOLEAN] :include_registration_count Include the registration count in the results
@@ -901,7 +901,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -915,7 +915,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Get xAPI statements for version `versionId` of `courseId`
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
     # @option opts [String] :learner_id Only entries for the specified learner id will be included.
@@ -929,7 +929,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Get xAPI statements for version &#x60;versionId&#x60; of &#x60;courseId&#x60;
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
     # @param [Hash] opts the optional parameters
     # @option opts [String] :learner_id Only entries for the specified learner id will be included.
@@ -971,7 +971,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -985,7 +985,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Get all versions of `courseId`
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @option opts [DateTime] :since Only items updated since the specified ISO 8601 TimeStamp (inclusive) are included. If a time zone is not specified, UTC time zone will be used.
     # @option opts [DateTime] :_until Only items updated before the specified ISO 8601 TimeStamp (inclusive) are included. If a time zone is not specified, UTC time zone will be used.
@@ -998,7 +998,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Get all versions of &#x60;courseId&#x60;
-    # @param course_id 
+    # @param course_id
     # @param [Hash] opts the optional parameters
     # @option opts [DateTime] :since Only items updated since the specified ISO 8601 TimeStamp (inclusive) are included. If a time zone is not specified, UTC time zone will be used.
     # @option opts [DateTime] :_until Only items updated before the specified ISO 8601 TimeStamp (inclusive) are included. If a time zone is not specified, UTC time zone will be used.
@@ -1035,7 +1035,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1058,7 +1058,7 @@ module RusticiSoftwareCloudV2
     # @option opts [String] :order_by Optional enum parameter for specifying the field and order by which to sort the results.  Defaults to creation_date_desc.
     # @option opts [BOOLEAN] :include_registration_count Include the registration count in the results (default to false)
     # @option opts [BOOLEAN] :include_course_metadata Include course metadata in the results. If the course has no metadata, adding this parameter has no effect. (default to false)
-    # @option opts [Array<String>] :tags 
+    # @option opts [Array<String>] :tags
     # @return [CourseListSchema]
     def get_courses(opts = {})
       data, _status_code, _headers = get_courses_with_http_info(opts)
@@ -1075,7 +1075,7 @@ module RusticiSoftwareCloudV2
     # @option opts [String] :order_by Optional enum parameter for specifying the field and order by which to sort the results.  Defaults to creation_date_desc.
     # @option opts [BOOLEAN] :include_registration_count Include the registration count in the results
     # @option opts [BOOLEAN] :include_course_metadata Include course metadata in the results. If the course has no metadata, adding this parameter has no effect.
-    # @option opts [Array<String>] :tags 
+    # @option opts [Array<String>] :tags
     # @return [Array<(CourseListSchema, Fixnum, Hash)>] CourseListSchema data, response status code and response headers
     def get_courses_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -1114,7 +1114,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1166,7 +1166,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1180,8 +1180,8 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Set the tags for this course
-    # @param course_id 
-    # @param tags 
+    # @param course_id
+    # @param tags
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def put_course_tags(course_id, tags, opts = {})
@@ -1190,8 +1190,8 @@ module RusticiSoftwareCloudV2
     end
 
     # Set the tags for this course
-    # @param course_id 
-    # @param tags 
+    # @param course_id
+    # @param tags
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def put_course_tags_with_http_info(course_id, tags, opts = {})
@@ -1224,7 +1224,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(tags)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1237,7 +1237,7 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Sets all of the provided tags on all of the provided courses
-    # @param batch 
+    # @param batch
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def put_course_tags_batch(batch, opts = {})
@@ -1246,7 +1246,7 @@ module RusticiSoftwareCloudV2
     end
 
     # Sets all of the provided tags on all of the provided courses
-    # @param batch 
+    # @param batch
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def put_course_tags_batch_with_http_info(batch, opts = {})
@@ -1275,7 +1275,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(batch)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1288,8 +1288,8 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Set configuration settings for this course.
-    # @param course_id 
-    # @param configuration_settings 
+    # @param course_id
+    # @param configuration_settings
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def set_course_configuration(course_id, configuration_settings, opts = {})
@@ -1298,8 +1298,8 @@ module RusticiSoftwareCloudV2
     end
 
     # Set configuration settings for this course.
-    # @param course_id 
-    # @param configuration_settings 
+    # @param course_id
+    # @param configuration_settings
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def set_course_configuration_with_http_info(course_id, configuration_settings, opts = {})
@@ -1332,7 +1332,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(configuration_settings)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1345,8 +1345,8 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Sets the course title for `courseId`
-    # @param course_id 
-    # @param title 
+    # @param course_id
+    # @param title
     # @param [Hash] opts the optional parameters
     # @return [String]
     def set_course_title(course_id, title, opts = {})
@@ -1355,8 +1355,8 @@ module RusticiSoftwareCloudV2
     end
 
     # Sets the course title for &#x60;courseId&#x60;
-    # @param course_id 
-    # @param title 
+    # @param course_id
+    # @param title
     # @param [Hash] opts the optional parameters
     # @return [Array<(String, Fixnum, Hash)>] String data, response status code and response headers
     def set_course_title_with_http_info(course_id, title, opts = {})
@@ -1389,7 +1389,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(title)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1403,9 +1403,9 @@ module RusticiSoftwareCloudV2
       return data, status_code, headers
     end
     # Set configuration settings for this course and version.
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
-    # @param configuration_settings 
+    # @param configuration_settings
     # @param [Hash] opts the optional parameters
     # @return [nil]
     def set_course_version_configuration(course_id, version_id, configuration_settings, opts = {})
@@ -1414,9 +1414,9 @@ module RusticiSoftwareCloudV2
     end
 
     # Set configuration settings for this course and version.
-    # @param course_id 
+    # @param course_id
     # @param version_id The course version
-    # @param configuration_settings 
+    # @param configuration_settings
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Fixnum, Hash)>] nil, response status code and response headers
     def set_course_version_configuration_with_http_info(course_id, version_id, configuration_settings, opts = {})
@@ -1453,7 +1453,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(configuration_settings)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,

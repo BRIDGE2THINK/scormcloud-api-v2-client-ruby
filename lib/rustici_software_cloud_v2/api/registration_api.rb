@@ -58,7 +58,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -112,7 +112,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(registration)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -163,7 +163,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -220,7 +220,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -287,7 +287,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -338,7 +338,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -395,7 +395,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(tags)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -446,7 +446,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:DELETE, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -500,7 +500,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -565,7 +565,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -630,7 +630,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -701,7 +701,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -772,7 +772,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -842,7 +842,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -897,7 +897,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -955,7 +955,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(launch_link_request)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1016,7 +1016,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1077,7 +1077,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1129,7 +1129,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1199,7 +1199,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:GET, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1257,7 +1257,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(tags)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1308,7 +1308,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(batch)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:PUT, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1359,7 +1359,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = nil
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:HEAD, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1416,7 +1416,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(configuration_settings)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
@@ -1483,7 +1483,7 @@ module RusticiSoftwareCloudV2
 
       # http body (model)
       post_body = @api_client.object_to_http_body(configuration_settings)
-      auth_names = ['APP_NORMAL', 'OAUTH']
+      auth_names = ['APP_NORMAL']
       data, status_code, headers = @api_client.call_api(:POST, local_var_path,
         :header_params => header_params,
         :query_params => query_params,
